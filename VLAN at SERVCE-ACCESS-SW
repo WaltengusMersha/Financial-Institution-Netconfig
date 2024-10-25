@@ -1,0 +1,18 @@
+vlan 10
+name DATA
+vlan 120
+name VOICE
+
+
+interface range f0/1-2
+switchport mode trunk
+ex
+
+interface range f0/3-24
+switchport mode access
+switchport access vlan 10
+switchport voice vlan 120
+
+exit
+do wr
+

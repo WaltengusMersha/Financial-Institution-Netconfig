@@ -1,0 +1,30 @@
+enable
+conf ter
+
+hostname SAFARI-ISP
+
+enable password cisco
+line console 0
+password cisco
+service password-encryption 
+
+banner motd #no unauthorized user access#
+no ip domain-lookup
+
+
+username cisco password cisco
+ip domain-name cisco.com
+
+crypto key generate rsa
+1024
+
+ip ssh version 2
+
+line vty 0 15
+login local
+transport input ssh
+exit
+do wr
+ex
+
+

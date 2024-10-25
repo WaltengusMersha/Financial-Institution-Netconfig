@@ -1,0 +1,25 @@
+vlan 10
+name HR
+ex
+vlan 20
+name CS
+ex
+vlan 30
+name MK
+ex
+vlan 40
+name LM
+ex
+vlan 50
+name IT
+ex
+vlan 120
+name VOICE
+ex
+
+interface range G1/0/2-6
+switchport mode trunk
+
+exit
+do wr
+

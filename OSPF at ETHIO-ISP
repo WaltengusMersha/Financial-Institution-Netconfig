@@ -1,0 +1,4 @@
+router ospf 10
+ router-id 5.5.5.5
+ network 190.200.100.0 0.0.0.0 area 0
+ network 190.200.100.8 0.0.0.0 area 0
