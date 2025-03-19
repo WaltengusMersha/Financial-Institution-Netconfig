@@ -1,21 +1,21 @@
 interface vlan 10
-ip address 192.169.20.1 255.255.255.192
+ip address 192.168.20.1 255.255.255.192
 ip helper-address 192.168.21.5
 ex
 interface vlan 20
-ip address 192.169.20.65 255.255.255.192
+ip address 192.168.20.65 255.255.255.192
 ip helper-address 192.168.21.5
 ex
 interface vlan 30
-ip address 192.169.20.129 255.255.255.192
+ip address 192.168.20.129 255.255.255.192
 ip helper-address 192.168.21.5
 ex
 interface vlan 40
-ip address 192.169.20.193 255.255.255.224
+ip address 192.168.20.193 255.255.255.224
 ip helper-address 192.168.21.5
 ex
 interface vlan 50
-ip address 192.169.20.225 255.255.255.224
+ip address 192.168.20.225 255.255.255.224
 ip helper-address 192.168.21.5
 ex
 do wr
