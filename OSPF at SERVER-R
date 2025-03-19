@@ -1,5 +1,9 @@
 router ospf 10
- router-id 7.7.7.7
- network 190.200.100.8 0.0.0.0 area 0
- network 190.200.100.12 0.0.0.0 area 0
- network 192.168.21.0 0.0.0.15 area 0
+router-id 7.7.7.7
+network 192.168.21.0 0.0.0.15 area 0
+network 190.200.100.8 0.0.0.3 area 0
+network 190.200.100.12 0.0.0.3 area 0
+network 192.168.21.24 0.0.0.3 area 0
+network 192.168.21.28 0.0.0.3 area 0
+exit
+do wr
